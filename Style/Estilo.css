@@ -12,46 +12,60 @@
 }
 
 body {
-    background: linear-gradient(230deg, rgba(0, 0, 0, 0.63) 30.1%, rgba(33, 33, 155, 0.685));
-
-}
-
-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    background: linear-gradient(230deg, rgba(0, 0, 0, 0.63) 30.1%, rgba(33, 33, 155, 0.685));
+    height: 100%;
+}
+
+header {
+    background-color: transparent;
+    
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.ben-10 {
+    position: relative;
+    
+}
+
+.ben-10 .bolinha {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    
+    top: 0px;
+    transform: translateX(-50%);
+
+    background-color: #3498db;
+    
+    border-radius: 50%;
+
 }
 
 .navegacao {
     display: flex;
-    align-items: center;
 
     width: 100%;
     padding: 0 20px;
 }
 
-.perfil {
-    display: none;
-    position: absolute;
+.sec-01 {
+ background: transparent;
 
-    top: 100%;
-    left: 50%;
-    
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 .perfil img {
     background: blueviolet;
 
-
     width: 50%;
 
-    padding: 10px;
     margin: 10px;
 
     border: 2px solid black;
@@ -59,3 +73,11 @@ header {
     box-shadow: 2px 5px 2px #00000059;
 
 }
+@keyframes moverParaDireita {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
