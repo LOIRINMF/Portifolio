@@ -1,0 +1,25 @@
+:root{
+--cor-6: #2ecc71;
+  
+}
+
+/*TELEFONES*/
+@media screen and (max-width: 767px) {
+  body {
+    background: linear-gradient(230deg, var(--cor-6) 30.1%, rgba(33, 33, 155, 0.685));
+  }
+}
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #af0ca6;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px){
+  body {
+    background-color: #7f6c1b;
+  }
+}
