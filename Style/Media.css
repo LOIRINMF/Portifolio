@@ -3,23 +3,24 @@
   
 }
 
-/*TELEFONES*/
+/*TELEFONES
 @media screen and (max-width: 768px) {
   body {
     background: linear-gradient(230deg, var(--cor-6) 30.1%, rgba(33, 33, 155, 0.685));
   }
 }
 
-/*TABLETS*/
+TABLETS
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     body {
         background-color: #af0ca6;
     }
 }
 
-/*DESKTOP*/
+DESKTOP
 @media screen and (min-width: 1024px){
   body {
     background-color: #7f6c1b;
   }
 }
+*/

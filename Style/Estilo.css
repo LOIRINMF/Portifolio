@@ -5,94 +5,73 @@
 
 :root {
   --cor-1: #3498db;
+
   --cor-2: #e74c3c;
+
   --cor-3: #2ecc71;
+
   --cor-4: #f1c40f;
+  
   --cor-5: #9b59b6;
 }
 
 body {
   display: flex;
 
-  height: 100%;
+
+  background-image: linear-gradient(250.9deg, rgb(4, 132, 218) 30%, rgba(6, 10, 206, 0.822) 10%, rgba(140, 6, 173, 0.781));
+
 }
 
 header {
-  justify-content: center;
-  align-items: center;
+  position: relative;
 
-  background-color: #490745d0;
+  width: 100%;
+  height: 300px;
+
+  top: 100px;
 
   padding: 20px;
 
-  text-align: center;
+  background-color: #490745d0;
 
-}
+  & .header__perfil {
+    padding: 10px;
 
-.ben-10 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: red;
-}
-
-.ben-10 .bolinha {
-  width: 50px;
-  height: 50px;
-
-  top: 0px;
-  left: 50%;
-
-  background-color: #3498db;
-
-  border-radius: 50%;
-
-}
-
-.navegacao {
-  display: flex;
-
-  width: 100%;
-  padding: 0 20px;
-
-  background-color: lime;
-}
-
-.sec-01 {
-  display: flex;
-
-  max-width: 600px;
-  background: blueviolet;
-
-  top: 30px;
-
-  margin: 10px;
-
-}
-
-.perfil {
-  display: flex;
-  justify-content: left;
-}
-
-.perfil img {
-  width: 50%;
-
-  margin: 10px;
-
-  border: 2px solid black;
-  border-radius: 10%;
-  box-shadow: 2px 5px 2px #00000059;
-
-}
-
-@keyframes moverParaDireita {
-  0% {
-    left: 0;
   }
 
-  100% {
-    left: 100%;
+  & .my__name {
+    position: relative;
+
+    left: 20%;
+    
+    color: var(--cor-1);
+  }
+
+}
+
+.redes {
+  position: relative;
+  justify-content: space-around;
+
+  margin: 0 0 10px 0;
+  left: 35%;
+
+  & a {
+    text-decoration: none;
+
+    color: var(--cor-3);
+  }
+}
+
+.habili {
+
+  & h1 {
+    position: relative;
+
+    left: 0;
+    color: blue;
+
+    font-size: 3em;
   }
 }
