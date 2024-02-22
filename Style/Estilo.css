@@ -18,19 +18,20 @@
 
 body {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 
   background-image: linear-gradient(250.9deg, var(--cor-05) 30%, var(--cor-04) 10%, var(--cor-07));
 
 }
 
 header {
-  position: relative;
-
+  position: fixed;
+  
   width: 100%;
   height: 400px;
 
-  top: 100px;
+  top: 90px;
 
   padding: 20px;
 
@@ -43,7 +44,7 @@ header {
 
   & .my__name {
     text-align: center;
-  
+
   }
 
 }
@@ -53,7 +54,7 @@ header {
 
   right: 113px;
   padding: 10px;
-  
+
   font-size: 2.6em;
 
   color: #fff;
@@ -105,4 +106,49 @@ header {
 a img {
   width: 30px;
 
+}
+
+img:hover {
+
+  transform: scale(1.5);
+}
+
+.um-pouco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px;
+
+  .um-pouco-m {
+    position: relative;
+
+    width: 500px;
+
+    left: 50px;
+
+    padding: 10px;
+  }
+
+  & p {
+    color: black;
+
+    text-align: center;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center; 
+  
+  
+  
+  background-color: black;
+
+  & .teste {
+    color: #fff;
+
+   
+
+    }
 }
