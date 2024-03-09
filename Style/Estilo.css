@@ -1,6 +1,7 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
-
 
 * {
   margin: 0;
@@ -40,7 +41,7 @@ header {
   position: absolute;
 
   width: 97%;
-  height: 400px;
+  height: 450px;
 
   top: 70px;
 
@@ -50,7 +51,7 @@ header {
 
   & .header__perfil {
     font-family: var(--font-02);
-    
+
     padding: 5px;
 
   }
@@ -66,30 +67,17 @@ header {
   font-size: 2.6em;
 
   color: #fff;
-}
 
-.my__name h2 p {
-  display: inline;
+  & p {
+    display: inline;
 
-  font-weight: 500;
-}
-
-.habili {
-
-  text-align: center;
-
-  & h1 {
-    position: relative;
-
-    color: var(--cor-03);
-
-    font-size: 3.5em;
+    font-weight: 500;
   }
 }
 
 .redes {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 
   margin: 10px 0 0 0px;
 
@@ -97,11 +85,9 @@ header {
     position: relative;
     justify-content: space-around;
 
-    left: 60px;
   }
 
   & a {
-
     margin-left: 10px;
 
     text-decoration: none;
@@ -118,4 +104,40 @@ a img {
 img:hover {
 
   transform: scale(1.5);
+}
+
+.habili {
+  position: relative;
+
+  margin-left: 23%;
+
+  & h1 {
+
+    color: var(--cor-03);
+
+    font-size: 3.5em;
+  }
+}
+
+.um-pouco-m {
+  position: absolute;
+
+  right: 13%;
+
+  & div {
+    position: relative;
+    width: 400px;
+
+    margin: 7px;
+    
+    background-color: rgba(0, 0, 0, 0.39);
+
+  }
+
+  & p {
+    margin: 7px;
+    padding: 8px;
+
+    color: #2ecc71;
+  }
 }
