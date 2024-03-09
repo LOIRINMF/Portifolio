@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,30 +18,39 @@
   --cor-07: #2ecc71;
   --cor-08: #7CEB17;
 
-} 
+  --font-01: Verdana, Geneva, Tahoma, sans-serif;
+  --font-02: "Merriweather", sans-serif;
+  --font-03: "Truculenta", sans-serif;
+}
 
-body {
+html,body {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
+  height: 100vh;
 
   background-image: linear-gradient(250.9deg, var(--cor-04) 10%, var(--cor-07));
 
+  font-family: var(--font-01);
 }
 
 header {
-  position: relative;
-  
-  width: 100%;
+  position: absolute;
+
+  width: 97%;
   height: 400px;
 
-  top: 90px;
+  top: 70px;
 
-  padding: 20px;
+  padding: 10px;
 
   background-color: var(--cor-06);
 
   & .header__perfil {
-    padding: 10px;
+    padding: 5px;
+
+    font-family: var(--font-02);
 
   }
 
@@ -51,7 +64,6 @@ header {
 .my__name h2 {
   position: relative;
 
-  right: 113px;
   padding: 10px;
 
   font-size: 2.6em;
@@ -72,7 +84,6 @@ header {
   & h1 {
     position: relative;
 
-    right: 155px;
     color: var(--cor-03);
 
     font-size: 3.5em;
@@ -110,19 +121,4 @@ a img {
 img:hover {
 
   transform: scale(1.5);
-}
-
-main {
-  display: flex;
-  justify-content: center; 
-  
-  
-  background-color: black;
-
-  & .teste {
-    color: #fff;
-
-   
-
-    }
 }
