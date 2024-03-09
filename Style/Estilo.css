@@ -23,7 +23,8 @@
   --font-03: "Truculenta", sans-serif;
 }
 
-html,body {
+html,
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,23 +49,19 @@ header {
   background-color: var(--cor-06);
 
   & .header__perfil {
+    font-family: var(--font-02);
+    
     padding: 5px;
 
-    font-family: var(--font-02);
-
   }
-
-  & .my__name {
-    text-align: center;
-
-  }
-
 }
 
 .my__name h2 {
   position: relative;
 
-  padding: 10px;
+  margin-left: 25px;
+
+  padding: 8px;
 
   font-size: 2.6em;
 
